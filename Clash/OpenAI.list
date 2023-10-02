@@ -1,5 +1,7 @@
 # OpenAI
-DOMAIN-SUFFIX,openai.com
+# DOMAIN-SUFFIX,openai.com
 
 # bing.com 修复
 DOMAIN-SUFFIX,bing.com
+DOMAIN-SUFFIX,bing.net
+DOMAIN-SUFFIX,chatpdf.com
