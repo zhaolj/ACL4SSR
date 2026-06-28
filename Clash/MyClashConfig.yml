@@ -67,3 +67,85 @@ profile:
 #   DoH: 以 https:// 开头的 DNS 服务器。拥有更好的伪装性，且几乎不可能被运营商或网络管理封锁，但查询效率和安全性可能略低。
 #   DoT: 以 tls:// 开头的 DNS 服务器。拥有更高的安全性和查询效率，但端口有可能被管制或封锁。
 #   若要了解更多关于 DoH/DoT 相关技术，请自行查阅规范文档。
+
+proxy-providers:
+  cnix-filter:
+    type: file
+    filter: ^((?!(因V2ray|纯IPV6接入|购买渠道|备用登录|备用面板|忘记登录|禁止工作室|请使用全局代理访问官网|剩余流量|过期时间)).)*$
+    path: ./profiles/proxies/cnix.yaml
+  cnix-usage:
+    type: file
+    filter: 剩余流量|过期时间
+    path: ./profiles/proxies/cnix.yaml
+  proxy-us:
+    type: file
+    filter: 美国
+    path: ./profiles/proxies/cnix.yaml
+  proxy-india:
+    type: file
+    filter: 印度
+    path: ./profiles/proxies/cnix.yaml
+  proxy-hongkong:
+    type: file
+    filter: 香港|永久虚通路连接|中国移动
+    path: ./profiles/proxies/cnix.yaml
+  proxy-japan:
+    type: file
+    filter: 日本
+    path: ./profiles/proxies/cnix.yaml
+  proxy-tw:
+    type: file
+    filter: 台湾
+    path: ./profiles/proxies/cnix.yaml
+  proxy-ca:
+    type: file
+    filter: 加拿大
+    path: ./profiles/proxies/cnix.yaml
+  proxy-fr:
+    type: file
+    filter: 法国
+    path: ./profiles/proxies/cnix.yaml
+  proxy-au:
+    type: file
+    filter: 澳大利亚
+    path: ./profiles/proxies/cnix.yaml
+  proxy-ie:
+    type: file
+    filter: 爱尔兰
+    path: ./profiles/proxies/cnix.yaml
+  proxy-uk:
+    type: file
+    filter: 英国
+    path: ./profiles/proxies/cnix.yaml
+  proxy-kr:
+    type: file
+    filter: 韩国
+    path: ./profiles/proxies/cnix.yaml
+  proxy-ru:
+    type: file
+    filter: 俄罗斯
+    path: ./profiles/proxies/cnix.yaml
+  proxy-sg:
+    type: file
+    filter: 新加坡
+    path: ./profiles/proxies/cnix.yaml
+  proxy-de:
+    type: file
+    filter: 德国
+    path: ./profiles/proxies/cnix.yaml
+  proxy-nl:
+    type: file
+    filter: 荷兰
+    path: ./profiles/proxies/cnix.yaml
+  proxy-neteasy:
+    type: file
+    filter: 网易|音乐|解锁|Music|NetEase
+    path: ./profiles/proxies/cnix.yaml
+  proxy-netflix:
+    type: file
+    filter: NF|奈飞|解锁|Netflix|NETFLIX|Media
+    path: ./profiles/proxies/cnix.yaml
+  proxy-game:
+    type: file
+    filter: 游戏|Game|解锁|GAME
+    path: ./profiles/proxies/cnix.yaml
