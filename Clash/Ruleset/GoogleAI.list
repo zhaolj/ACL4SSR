@@ -1,0 +1,7 @@
+PROCESS-NAME,Antigravity
+PROCESS-NAME,Antigravity.app
+PROCESS-NAME-REGEX,.*Antigravity\s+Helper.*
+PROCESS-NAME-REGEX,com\.google\.antigravity.*
+PROCESS-PATH-REGEX,/Applications/Antigravity\.app.*
+DOMAIN-SUFFIX,notebooklm.google
+DOMAIN-SUFFIX,notebooklm.google.com
